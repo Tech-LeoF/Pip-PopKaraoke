@@ -1,0 +1,23 @@
+.form_block{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #E6BFFD;
+}
+
+#song_form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.text{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#align_text{
+    text-align: center;
+}

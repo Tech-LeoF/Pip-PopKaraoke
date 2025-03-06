@@ -34,3 +34,6 @@ songForm.addEventListener('submit', (event) => {
 
     songForm.reset();
 })
+
+const paragraph = document.getElementsByTagName("p")[0];
+paragraph.innerHTML = "Sumérgete en la mejor experiencia de karaoke, donde puedes agregar tus canciones favoritas y disfrutarlas con amigos. Nuestro sistema te permite crear una lista de reproducción personalizada, añadir nuevas canciones fácilmente y eliminarlas cuando quieras."

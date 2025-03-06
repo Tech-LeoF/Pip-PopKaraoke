@@ -3,28 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Karaoke Pip & Pop</title>
 </head>
 <body>
-    <h1>Bienvenidos al Karaoke Pip & Pop</h1>
+    <div class="song_form">
+        <h1 class="text">Bienvenidos al Karaoke Pip & Pop</h1>
+        <p id="align_text" class="text"></p>
+    </div>
 
     <!--Formulario para agregar canciones-->
 
-    <form id="song_form">
-        <label for="song_name">Nombre de la canción</label>
-        <input id="song_name" type="text" required>
-        <label for="artist_name">Nombre del artista</label>
-        <input id="artist_name" type="text" required>
-        <label for="url_song">Ingresa el enlace de la canción</label>
-        <input id="url_song" type="url" required>
-
-        <button type="submit">Agregar a la lista</button>
+<div class="form_block">
+    <div>
+        <h2>¡No hay karaoke sin música!</h2>
+        <p>Completa los siguientes campos para añadir tu canción a la lista de reproducción y disfruta cantando con nosotros.</p>
+        <form id="song_form">
+            <label class="text" for="song_name">Nombre de la canción</label>
+            <input class="text" id="song_name" type="text" required>
+            <label class="text" for="artist_name">Nombre del artista</label>
+            <input class="text" id="artist_name" type="text" required>
+            <label class="text" for="url_song">Ingresa el enlace de la canción</label>
+            <input class="text" id="url_song" type="url" required>
+    
+            <button type="submit">Agregar a la lista</button>
+    </div>
+    <div>
+        <img src="./imgs/latest.png" alt="">
+    </div>
     </form>
+</div>
 
     <!--Lista de canciones-->
-    <h2>Lista de reproducción</h2>
+    <h2 class="text">Lista de reproducción</h2>
 
-    <ul id="play_list">
+    <ul class="text" id="play_list">
 
     </ul>
 </body>
