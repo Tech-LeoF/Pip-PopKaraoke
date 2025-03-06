@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Karaoke Pip & Pop</title>
 </head>
 <body>
@@ -14,19 +15,23 @@
 
     <!--Formulario para agregar canciones-->
 
-<div class="form_block">
+<div class="text form_block">
     <div>
-        <h2>¡No hay karaoke sin música!</h2>
-        <p>Completa los siguientes campos para añadir tu canción a la lista de reproducción y disfruta cantando con nosotros.</p>
-        <form id="song_form">
-            <label class="text" for="song_name">Nombre de la canción</label>
-            <input class="text" id="song_name" type="text" required>
-            <label class="text" for="artist_name">Nombre del artista</label>
-            <input class="text" id="artist_name" type="text" required>
-            <label class="text" for="url_song">Ingresa el enlace de la canción</label>
-            <input class="text" id="url_song" type="url" required>
-    
-            <button type="submit">Agregar a la lista</button>
+        <h2 class="text">¡No hay karaoke sin música!</h2>
+        <div>
+            <p class="text">Completa los siguientes campos para añadir tu canción a la lista de reproducción y disfruta cantando con nosotros.</p>
+        </div>
+
+        <div class="displa mb-10 overflow-hidden duration-300 bg-white rounded-lg dark:bg-dark-2 shadow-1 hover:shadow-3 dark:shadow-card dark:hover:shadow-3 w-100 border-5">
+            <form id="song_form">
+                <label class="text"  for="song_name">Nombre de la canción</label>
+                <input class="w-full bg-transparent rounded-md border border-stroke dark:border-dark-3 py-[10px] px-5 text-dark-6 outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-gray-2 disabled:border-gray-2"  id="song_name" type="text" placeholder="Escribe el nombre de la canción">
+                <label class="text" for="artist_name">Nombre del artista</label>
+                <input class="w-full bg-transparent rounded-md border border-stroke dark:border-dark-3 py-[10px] px-5 text-dark-6 outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-gray-2 disabled:border-gray-2" id="artist_name" type="text" required placeholder="Ingresa el nombre del artista">
+                <label class="text" for="url_song">Ingresa el enlace de la canción</label>
+                <input class="w-full bg-transparent rounded-md border border-stroke dark:border-dark-3 py-[10px] px-5 text-dark-6 outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-gray-2 disabled:border-gray-2" id="url_song" type="url" required placeholder="Pega el enlace de la canción">
+                <button class="text bg-purple-700"  type="submit">Agregar a la lista</button>
+        </div>
     </div>
     <div>
         <img src="./imgs/latest.png" alt="">
